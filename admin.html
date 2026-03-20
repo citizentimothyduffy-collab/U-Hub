@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Movie Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Add New Movie</h2>
+        <form id="movieForm">
+            <input type="text" id="movieTitle" placeholder="Title" required>
+            <input type="text" id="movieGenre" placeholder="Genre" required>
+            <input type="number" id="movieYear" placeholder="Year" required>
+            <input type="url" id="movieVideoUrl" placeholder="Video URL" required>
+            <button type="submit">Add Movie</button>
+        </form>
+        <h2>Add New TV Show</h2>
+        <form id="tvForm">
+            <input type="text" id="tvTitle" placeholder="Title" required>
+            <input type="number" id="tvSeasons" placeholder="Seasons" required>
+            <input type="url" id="tvVideoUrl" placeholder="Video URL" required>
+            <button type="submit">Add TV Show</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>
